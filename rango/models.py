@@ -12,8 +12,8 @@ class Category(models.Model):
         return self.name
 
 class Page(models.Model):
-    category = models.ForeignKey(Category, on_delete=models.CASCADE)
     title = models.CharField(max_length=128)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)
     url = models.URLField()
     views = models.IntegerField(default=0)
 
