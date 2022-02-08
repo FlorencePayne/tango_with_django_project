@@ -11,36 +11,36 @@ def populate():
     python_pages = [
         {'title': 'Official Python Tutorial',
          'url':'http://docs.python.org/3/tutorial/',
-         'views': 12,},
+         'views': 112,},
         {'title':'How to Think like a Computer Scientist',
          'url':'http://www.greenteapress.com/thinkpython/',
-         'views': 21},
+         'views': 32},
         {'title':'Learn Python in 10 Minutes',
          'url':'http://www.korokithakis.net/tutorials/python/',
-         'views': 221} ]
+         'views': 21} ]
     
     django_pages = [
         {'title':'Official Django Tutorial',
          'url':'https://docs.djangoproject.com/en/2.1/intro/tutorial01/',
-         'views': 121},
+         'views': 32},
         {'title':'Django Rocks',
          'url':'http://www.djangorocks.com/',
-         'views': 12},
+         'views': 13},
         {'title':'How to Tango with Django',
          'url':'http://www.tangowithdjango.com/',
-         'views': 1221} ]
+         'views': 1223} ]
     
     other_pages = [
         {'title':'Bottle',
          'url':'http://bottlepy.org/docs/dev/',
-         'views': 21},
+         'views': 1312},
         {'title':'Flask',
          'url':'http://flask.pocoo.org',
          'views': 12} ]
     
-    cats = {'Python': {'pages': python_pages, 'views': 122, 'likes': 112},
-            'Django': {'pages': django_pages, 'views': 121, 'likes': 21},
-            'Other Frameworks': {'pages': other_pages, 'views': 12, 'likes': 1} }
+    cats = {'Python': {'pages': python_pages, 'views': 11, 'likes': 3},
+            'Django': {'pages': django_pages, 'views': 31, 'likes': 32},
+            'Other Frameworks': {'pages': other_pages, 'views': 32, 'likes': 12} }
     
     for cat, cat_data in cats.items():
         c = add_cat(cat, views=cat_data['views'], likes=cat_data['likes'])
